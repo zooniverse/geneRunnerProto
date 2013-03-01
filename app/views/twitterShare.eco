@@ -1,0 +1,5 @@
+<a href="https://twitter.com/share?url=<%-@returnUrl%>&text=<%-@text%>&hashtags=generunner" target="_blank"> 
+  <button >
+    <i class="icon-twitter-bird"> </i>
+  </button>
+</a>

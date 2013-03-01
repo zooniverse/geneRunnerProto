@@ -1,0 +1,15 @@
+
+  <a target="_blank" href="https://www.facebook.com/dialog/feed?
+    app_id=310507282327045&
+    link=<%=encodeURI(@returnUrl || "" )%>&
+    picture=<%= encodeURI(@pictureUrl || "") %>&
+    name=<%=encodeURI(@name || "" )%>&
+    caption=<%=encodeURI(@caption || "")%>&
+    description=<%=encodeURI(@description || "")%>&
+    message=<%= encodeURI(@message || "")%>&
+    redirect_uri=http://generunner.net"> 
+
+  <button>
+    <i class="icon-facebook-rect" style="margin-left: 3px"></i>
+  </button>
+  </a>

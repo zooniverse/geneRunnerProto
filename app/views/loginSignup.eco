@@ -1,0 +1,53 @@
+
+<div class='loginContent'>
+  <a class='dismiss' href='#/'><img src='images/cross.png'></img></a>
+
+  <div class='loginPane'>
+    <h2>Already have Zooniverse username? Sign in here:</h2>
+    <h3 class='flash'></h3>
+    <form class='login'>
+      <input name='username' placeholder='Username'></input>
+      <input name='password' placeholder='Password' type='password'></input>
+      
+      <input type='submit' value='Sign In' name='signin'></input>
+    </form>
+  </div>
+
+  <div  class='registerPane'> 
+    <h2>Register for Cancer Research Project</h2>
+    <form class='register'>
+
+      <div class='innerLeft'> 
+        <input name='First_Name' placeholder='First Name*' style="width:185px"></input>
+        <input name='Last_Name' placeholder='Last Name*' style="width:185px"></input>
+        <input name='Address_1' placeholder='Address 1*' style="width:374px"></input>
+        <input name='Address_2' placeholder='Address 2*' style="width:256px"></input>
+        <input name='telephone' placeholder='Telephone*' style="width:113px"></input>
+        <input name='city' placeholder='City*' style="width: 185px" ></input>
+        <input name='county' placeholder='County*' style="width: 67px"></input>
+        <input name='postcode' placeholder='Postcode*' style="width:113px"></input>
+        <p style= 'margin-top:0px'>* optional information</p>
+
+        <p>Check here to agree to our <a target='blank' href='https://www.zooniverse.org/privacy'>privacy policy</a>  <input type='checkbox' style='display:inline' name='privacyOptIn' class='privacyOptIn' /></p>
+        <p>We will not share your details with anyone else.</p>
+
+        <p >Cancer Research UK would like to say a big thank you for participating in this research.  Cancer Research is the World’s Leading Charity dedicated to saving lives through research.  We would like to keep in contact with you about upcoming news, events and fundraising activities.</p>
+
+      </div>
+
+      <div class='innerRight'>
+        <input name='username' placeholder='Username'></input>
+        <input name='Password' placeholder='Password' type='password'></input>
+        <input name='Password_Confirmation' placeholder='Confirm Password' type='password'></input>
+        <input name='Email' placeholder='Email'></input>
+        <input type='submit' name='Register' value="Register"></input>
+        <p style='font-size:11px; font-weight:600; margin;margin:0px; padding:0px'>If you are happy for your details to be shared with CR-UK and to receive this information using the email address you have provided, please tick this box:  <input type='checkbox' style='display:inline; position:relative; top: -22px; right :-184px' name='emailOptIn' class='emailOptIn' /> </p>
+
+        <p style='font-size:11px; font-weight:600;margin:-20px 0px; padding:0px'>If you would prefer not to receive this information by post or phone, please tick this box: <input type='checkbox' style='display:inline; position:relative; top:-22px; right:-45px' name='mailPhoneOptOut' class='mailPhoneOptOut' /> </p>
+       
+      </div>
+      
+    </form>
+  </div>
+
+</div>

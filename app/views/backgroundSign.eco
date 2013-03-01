@@ -1,0 +1,14 @@
+<div class='backgroundSign'>
+  <div class='pole'>
+  </div>
+  <div class='signOuter'>
+    <div class='signInner'>
+      <p style='margin-left: -1px'>
+      <% test = @text%>
+      <% for i in test : %>
+        <span style='margin:0px;margin:0px'><%=i%></span><br />
+      <%end%>
+      </p>
+    </div>
+  </div>
+</div>

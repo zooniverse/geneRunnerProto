@@ -1,0 +1,2 @@
+<div class='marker endMarker' style='left: <%=@%>px'>
+</div>

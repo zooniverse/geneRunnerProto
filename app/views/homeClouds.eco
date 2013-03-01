@@ -1,0 +1,12 @@
+<%locationsSmall =  [[10,20], [200,300]]%>
+<%locationsLarge =  [[50,60], [1137,30]]%>
+
+<div class='homeClouds'>
+  <%for point in locationsSmall : %>
+    <img  style="position:absolute; top:<%=point[1]%>px; left:<%=point[0]%>px" class='small-cloud' src = "images/cloud_small.png"></img> 
+  <% end %> 
+
+  <%for point in locationsLarge : %>
+    <img  style="position:absolute; top:<%=point[1]%>px; left:<%=point[0]%>px" class='small-cloud' src = "images/cloud_large.png"></img> 
+  <% end %> 
+</div>

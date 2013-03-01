@@ -1,0 +1,15 @@
+<a class='dismiss' href='#/classify'><img src='images/cross.png'></img></a>
+
+<img src='images/<%={10:'silverMedal.png',20:'goldMedal.png'}[@level] %>' ></img>
+<div class='details'>
+  <h3> You compleated your <%=@level%>k !</h3>
+  <p> Congratulations, you've made it to your team goal of running <%=@level%>k. Why stop now?</p>
+  <div class='social'>
+    <%- require('views/twitterShare')({text:"I just won a medal on geneRun !", returnUrl:"here"}) %>
+
+    <%- require('views/facebookShare')({text:"I just won a medal on geneRun !", returnUrl:"here"}) %>
+  </div>
+
+  <button class='continue'>Continue</button>
+
+</div>

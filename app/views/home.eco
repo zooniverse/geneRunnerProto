@@ -1,0 +1,12 @@
+<h1>Welcome to Gene Runner!</h1>
+<h2>Cancer researchers need your help classifying genetics data.</h2>
+
+<%-require('views/homeClouds')() %>
+
+<div class='centralContent'></div>
+
+
+<div class='homeBottom'>
+  <div class='grass'></div>
+  <img src='images/homeLower.png'></img>
+</div>

@@ -1,0 +1,63 @@
+<a class='dismiss' href='#/classify'><img src='images/cross.png'></img></a>
+<div class='header'>
+  <img src='images/infoImage.png'></img>
+  <h2> About Gene Runner</h2>
+  <ul class='subnav'>
+    <li data-type='overview' class='active'>About the project</li>
+    <li data-type='contribution'>Your contribution</li>
+    <li data-type='benifit' >How are you helping?</li>
+  </ul>
+</div>
+
+<div class='team'>
+  <h3>The Science Team</h3>
+  <ul>
+    <li>
+      <img src='images/razza.jpg'> </img>
+      <div class='details'>
+        <h3> Dr Raza Ali</h3>
+      </div>
+    </li>
+    <li>
+      <img src='images/andy.jpg'> </img>
+      <div class='details'>
+        <h3> Dr Andrew Hanby</h3>
+      </div>
+    </li>
+    <li>
+      <img src='images/paul.jpg'> </img>
+      <div class='details'>
+        <h3> Dr Paul Pharoah</h3>
+      </div>
+    </li>
+
+    <li>
+      <img src='images/diana.jpg'> </img>
+      <div class='details'>
+        <h3> Dr Diana Eccles</h3>
+      </div>
+    </li>
+  </ul>
+</div>
+
+<div class='science' style='overflow-y:scroll'>
+
+  <div class='subsection overview active'>
+    <h3> About the project</h3>
+    <p>
+      Text about the project goes here
+    </p>
+    
+  </div>
+  <div class='subsection contribution'>
+    <h3>Your Contribution matters</h3>
+    <p>Text about user contribution goes here</p>
+  </div>
+
+  <div class='subsection benifit'>
+    <h3>How are you helping?</h3>
+    <p>Text about how you are helping goes here</p>
+
+    
+  </div>
+</div>  

@@ -1,0 +1,23 @@
+<div class='sign'>
+  <div class='pole'></div>
+
+  <div class='pinkSign' style='width: 110px;left:-16px'>
+    <a href='#/'><img src='images/home.png'></img> <span>Home</span></a>
+  </div>
+
+  <div class='blueSign profileButton' style="width:120px; position:relative; left: -15px">
+    <a href='#/profile'><img src='images/profile.png'></img><span>Profile</span></a>
+  </div>
+
+  <div class='blueSign' style="width:85px;  position:relative; left: -2px">
+    <a href='#/help'><img src='images/help.png'></img> <span>Help</span></a>
+  </div>
+
+  <div class='blueSign' style="width:95px;  position:relative; left: -8px">
+    <a href='#/info'><img src='images/info.png'></img><span>About</span></a>
+  </div>
+  
+
+  
+</div>
+

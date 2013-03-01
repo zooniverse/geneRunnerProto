@@ -1,0 +1,5 @@
+<h1>Group Invite</h1>
+<h2>You have been invited to Join a Group</h2>
+<p><%= @referer%> Has invited you to join a group </p>
+<button class='groupAccept'>Accept</button>
+<button class='groupDecline'>Decline</button>

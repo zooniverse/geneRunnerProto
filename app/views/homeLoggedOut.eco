@@ -1,0 +1,15 @@
+<% if @details? : %>
+  <h2> <%=@details%></h2>
+<%end%>
+
+<form class='signIn'>
+  <input type = 'text'     placeholder="Username" name="Username"></input> <br />
+  <input type = 'password' placeholder="Password" name="Password"></input> <br />
+  <input type = 'submit' value='Sign In' ></input> <br />
+</form>
+
+<div class='otherOptions'>
+  <button class='signup'>Sign Up</button>
+  <button class='startNoSignIn'>Go Now</button>
+
+</div>

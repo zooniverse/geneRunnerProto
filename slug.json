@@ -1,0 +1,24 @@
+{
+  "dependencies": [
+    "es5-shimify", 
+    "json2ify", 
+    "jqueryify", 
+    "spine",
+    "spine/lib/local",
+    "spine/lib/ajax",
+    "spine/lib/route",
+    "spine/lib/manager",
+    "zooniverse/lib/controllers/top_bar",
+    "zooniverse/lib/google_analytics",
+    "zooniverse",
+    "underscore",
+    "jquery.ui.core"
+  ],
+  "libs": [
+    "node_modules/Zooniverse/vendor/base64.js",
+    "./lib/modernizr.custom.75430.js",
+    "./lib/aight.min.js",
+    "node_modules/underscore/underscore-min.js",
+    "node_modules/d3/d3.v2.js"
+  ]  
+}

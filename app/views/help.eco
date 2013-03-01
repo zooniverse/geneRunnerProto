@@ -1,0 +1,29 @@
+<a class='dismiss' href='#/classify'><img src='images/cross.png'></img></a>
+<div class='header'>
+  <img src='images/helpimage.png'></img>
+
+  <h2>Help</h2>
+  <ul class='helpNav'>
+    <li data-type='overview' class='active'>How to classify?</li>
+ 
+  </ul>
+</div>
+
+<div class='cellType overview active'>
+  <div class='images'>
+
+      <img src='images/typesColorAnswer.png'></img>
+
+    </div>
+  <div class='cellTypeinfo'>
+
+    <h1>How to Classify</h1>
+    <p>Help Text Goes Here </p>
+
+    
+    <button class='redoTutorial'>Repeat tutorial.</button>
+  </div>
+</div>
+
+
+

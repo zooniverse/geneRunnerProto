@@ -1,0 +1,20 @@
+<h2>Hi <%=@user.name%> <br /> Select a group or classify by yourself</h2>
+
+<form class='selectGroup'>
+
+  <select class='groupSelect' name='groupSelect'>
+    <% if @user.user_groups? : %>
+      <%for group in @user.user_groups : %>
+        <option value="<%=group.id%>"><%=group.name%></option>
+      <%end%>
+    <%end%>
+      <option value="solo">Run Solo</option>
+  </select>
+  <br />
+  <input type='submit' value='Get Running'></input> <br />
+
+</form>
+<button class='rerunTutorial' >See Tutorial Again</button><br /> 
+<% if @hasOwnGroup == false : %>
+  <button class='createYourGroup' style='margin-top:10px'> Create Your Group</button> 
+<%end%>

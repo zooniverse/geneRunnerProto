@@ -1,0 +1,95 @@
+<a class='dismiss' href='#/classify'><img src='images/cross.png'></img></a>
+<div class='header'>
+  <img src='images/profileImage.png'></img>
+  <h2>Hello <%= @user.name %></h2>
+</div>
+
+<div class='teamSelector'>
+<img src='images/groupDark.png'></img>
+    <select class='groupSelect' name='groupSelect' >
+    <% if @user.user_groups? : %>
+      <%for group in @user.user_groups : %>
+        <option <%=if @user.user_group_id? and @user.user_group_id == group.id then 'selected'%> value="<%=group.id%>"><%=group.name%></option>
+      <%end%>
+    <%end%>
+      <option  <%=if !@user.user_group_id? then 'selected'%> value="solo">Run Solo</option>
+  </select>
+</div>
+
+
+<div class='left'>
+  <div class='teams'>
+    <h3>Team Totals</h3>
+    <ul class='projectStat'>
+      <li><p class='username'><%= @user.name%></p> <p class='score'> <%=@user.classification_count || 0%></p></li>
+      <% if @user.user_groups? : %>
+        <%for group in @user.user_groups : %>
+          <li><p class='username'><%= group.name%></p> <p class='score'> <%=group.classification_count || 0%></p></li>
+        <%end%>
+      <%end%>
+    </ul>
+    </div>
+
+  <div class='recentMilestones'>
+    <h3>Recent Milestones</h3>
+    <ul>
+     <%if @awardCount >= 10 : %>
+      <div class='medal' style='display:inline-block; vertical-align:middle'>
+        <img src='images/silverMedal.png'></img>
+        <p style='font-size: 12px'>10k Medal</p>
+      </div>
+     <%end%>
+     <%if @awardCount >= 20 : %>
+      <div class='medal' style='display:inline-block; vertical-align:middle'>
+        <img src='images/goldMedal.png'></img>
+        <p style='font-size: 12px'>20k Medal</p>
+      </div>
+     <%end%>
+    </ul>
+  </div>
+</div>
+
+<div class='right'>
+  <div class='teammates'>
+    <h3>Teammates</h3>
+    <% if @group? : %>
+      <ul >
+          <%for user_id,details of @group.users : %>
+            <li><p class='username'><%= details.name%></p> <p class='score'> <%=details.classification_count%></p></li>
+          <%end%>
+      </ul>
+    
+    <%else : %>
+      <p> Select a group to see teammates </p>
+    <%end%>
+  </div>
+
+      
+    <div class='invite'>
+        <% if @user.user_group_id? : %>
+
+        <h3>Invite friends to join this group :</h3>
+          <%- require('views/twitterShare')({text:"Come join my team and search for cures for cancer. #{escape(@groupUrl)}", returnUrl:"here"}) %>
+          <%- require('views/facebookShare')({text:"Come join my team and search for cures for cancer. #{escape(@groupUrl)}", returnUrl:"here"}) %>
+          <div class='mailTo'>
+            <p>Or email an invite</p>
+            <input type='text' class='mailInviteAddress' placeholder='Invite Over Email'></input>
+            <button class='mailInvite'> <i class="icon-mail" style='font-weight: 200'></i></button>
+          </div>
+        <%else :%>
+          <% if @hasOwnGroup : %>
+            <h3> Select a group to invite friends</h3>
+          <% else : %>
+            <h3> Create a group</h3>
+            <p> Create a group to start classifying with friends</p>
+            <button class='createGroup'>Create your group</button>
+          <%end%>
+        <%end%>
+
+    </div>
+
+</div>
+
+
+
+

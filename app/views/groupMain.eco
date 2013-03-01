@@ -1,0 +1,6 @@
+<div class='groupMain'>
+  <img  class='speechBubble' src='images/speechBubble.png'></img>
+  <img  class='groupPeople'  src='images/groupsMain.png'></img>
+  <p class='groupText1'><%=@text2%></p>
+  <p class='groupText2'><%=@text1%></p>
+</div>

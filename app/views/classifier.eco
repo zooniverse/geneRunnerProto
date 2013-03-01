@@ -1,0 +1,24 @@
+<div id='canvasTarget'>
+
+  <div class='slowClouds'></div>
+  <div class='fastClouds'></div>
+  <div class='team'></div>
+  <div class='nextMilestone' ></div>
+  <div class='points'>
+    <div class='zeroPoint' style='position: absolute; width: 100000px; height:1px; background-color:#E3E3E3'> </div>
+
+  </div>
+
+
+  <div class='ground'>
+    <%- require('views/sign')() %>
+    <div class='grass'></div>
+    <div class='road'>
+      <div class='instructions'> 
+        <p> Loading</p>
+      </div>
+    </div>
+  </div>
+
+
+</div>

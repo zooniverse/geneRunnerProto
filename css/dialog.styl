@@ -1,0 +1,131 @@
+.dialog-underlay
+  background vendor-value(radial-gradient(rgba($blacker, 0.5), rgba($black, .75)))
+  bottom 0
+  display none
+  left 0
+  position absolute
+  right 0
+  text-align center
+  top 0
+  vertical-align middle
+  z-index 999
+
+  &.open
+    display block
+
+  .dialog
+    background $white
+    border-radius 3px
+    box-shadow 0 5px 10px rgba($blacker, 0.33)
+    display inline-block
+    max-width 500px
+    position relative
+    top 25%
+    text-align left
+
+    &.open
+      display inline-block
+
+    .dialog-closer
+      color $gray-dark
+      display none
+      font-size 20px
+      height 20px
+      line-height 0
+      position absolute
+      right 5px
+      top 5px
+      width 20px
+
+    > header
+      font-size 18px
+      font-weight 700
+      margin 20px
+
+    .dialog-content
+      margin 20px
+
+      p
+        margin 20px 0
+        font-weight 400
+        font-size 12px
+        line-height 16px
+
+      h2
+        font-family "Open Sans Condensed"
+        font-weight 800
+        font-size 25px
+        margin-bottom 20px
+
+      h3
+        font-weight 700
+        font-size 14px
+        margin-bottom -12px
+
+      img
+        max-width 100%
+
+    > footer
+      border-top 1px solid $gray-light
+      font-size 13px
+      padding 20px
+      text-align center
+      display: block!important
+      button
+        standard-button()
+
+    .dialog-arrow
+      border 15px solid transparent
+      position absolute
+      margin: -15px 0 0 -15px
+
+      &[data-direction="top"]
+        border-bottom-color $white
+        left 50%
+        margin-top 0
+        bottom 100%
+
+      &[data-direction="right"]
+        border-left-color $white
+        left 100%
+        margin-left 0
+        top 50%
+
+      &[data-direction="bottom"]
+        border-top-color $white
+        left 50%
+        margin-top 0
+        top 100%
+
+      &[data-direction="left"]
+        border-right-color $white
+        right 100%
+        margin-left 0
+        top 50%
+
+  &.popup,
+  &.stats
+    .dialog
+      font-size 13px
+
+      .dialog-closer
+        display block
+
+      > footer
+        display none
+
+  &.cameo .dialog
+    border-radius 50%
+
+    .dialog-content
+      margin 5px
+
+    footer
+      display none
+
+    img
+      border-radius 50%
+
+    .dialog-arrow
+      &[data-direction="top"]
+        bottom 99%
